@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container1" id="container1">
+            <h2>Container 1</h2>
+            <div class="item" draggable="true" ondragstart="dragStart(event)">Item 1</div>
+            <div class="item" draggable="true" ondragstart="dragStart(event)">Item 2</div>
+            <div class="item" draggable="true" ondragstart="dragStart(event)">Item 3</div>
+        </div>
+        <div class="container2" id="container2" ondragover="dragOver(event)" ondrop="drop(event)">
+            <h2>Container 2</h2>
+        </div>
+    </div>
+    <button id="resetButton" onclick="reset()">Reset</button>
+    <script src="index.js"></script>
+</body>
+
+</html>
